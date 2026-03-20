@@ -2,7 +2,7 @@ const INFO = {
 	main: {
 		title: "Nancy Mtengo",
 		name: "Nancy Mtengo",
-		email: "nancydama4@gmail.com",
+		email: "mtengonancy@gmail.com",
 		logo: "../logo.png",
 	},
 
@@ -36,7 +36,7 @@ const INFO = {
 				"Provided legal advice on matters relating to political parties' registration, compliance, and regulation under the Political Parties Act.",
 			logo: "https://example.com/icons/legal-scale.png",
 			logoLink: "https://www.orpp.or.ke/",
-			duration: "2024",
+			duration: "Jun 2024 - Aug 2024",
 			linkText: "View Experience",
 			link: "#",
 		},
@@ -46,9 +46,9 @@ const INFO = {
 			subtitle: "Mombasa Law Courts",
 			description:
 				"Assisted in the resolution of complex legal issues through thorough analysis of relevant statutes and case law, working on Civil Litigation, Criminal matters and family disputes.",
-			logo: "https://example.com/icons/gavel.png",
+			logo: "./jdc_logo.png",
 			logoLink: "https://www.judiciary.go.ke/",
-			duration: "2024",
+			duration: "Feb 2024 - Apr 2024",
 			linkText: "View Experience",
 			link: "#",
 		},
@@ -58,9 +58,9 @@ const INFO = {
 			subtitle: "Smartbrains Academy",
 			description:
 				"Developed meaningful relationships with students, improving comprehension of complex concepts through the use of visual aids and real world examples.",
-			logo: "https://example.com/icons/education.png",
+			logo: "./sb_logo.png",
 			logoLink: "#",
-			duration: "2023",
+			duration: "Jan 2023 - Dec 2023",
 			linkText: "View Experience",
 			link: "#",
 		},

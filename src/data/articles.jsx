@@ -2,64 +2,41 @@ import React from "react";
 
 function article_1() {
 	return {
-		date: "7 May 2023",
-		title: "The Benefits of Cloud Computing",
+		date: "20 March 2026",
+		title: "Giving back through community service and advocacy.",
 		description:
-			"Cloud computing offers a range of benefits, including cost savings and increased flexibility. Find out why more businesses are turning to the cloud.",
+			"A record of my volunteer work, community involvement, and advocacy initiatives.",
 		keywords: [
-			"The Benefits of Cloud Computing",
-			"Tharindu",
-			"Tharindu N",
-			"Tharindu Nayanajith",
+			"Nancy Mtengo",
+			"legal advocacy",
+			"community service",
+			"volunteering",
+			"Legal Aid",
+			"KMUN",
 		],
 		style: `
-				.article-content {
-					display: flex;
-					flex-direction: column;
-					align-items: center;
-				}
-
-				.randImage {
-					align-self: center;
-					outline: 2px solid red;
-				}
-				`,
+			.article-content {
+				display: flex;
+				flex-direction: column;
+			}
+			`,
 		body: (
 			<React.Fragment>
 				<div className="article-content">
-					<div className="paragraph">Content of article 1</div>
-					<img
-						src="https://picsum.photos/200/300"
-						alt="random"
-						className="randImage"
-					/>
+					<div className="paragraph">
+						As a law student, I believe that the pursuit of justice
+						extends beyond the courtroom. Through my involvement
+						with the Kenya Model United Nation (KMUN) and the Legal
+						Aid Clinic at Kenyatta University, I have had the
+						privilege of translating academic knowledge into tangible
+						community impact.
+					</div>
 				</div>
 			</React.Fragment>
 		),
 	};
 }
 
-function article_2() {
-	return {
-		date: "7 May 2023",
-		title: "Artificial Intelligence in Healthcare",
-		description:
-			"AI is transforming the healthcare industry, from improving patient outcomes to streamlining operations. Discover the latest applications of this game-changing technology.",
-		style: ``,
-		keywords: [
-			"Artificial Intelligence in Healthcare",
-			"Tharindu",
-			"Tharindu N",
-			"Tharindu Nayanajith",
-		],
-		body: (
-			<React.Fragment>
-				<h1>Content of article 2</h1>
-			</React.Fragment>
-		),
-	};
-}
-
-const myArticles = [article_1, article_2];
+const myArticles = [article_1];
 
 export default myArticles;

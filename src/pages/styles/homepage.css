@@ -85,6 +85,15 @@
 	margin-left: -30px;
 }
 
+.homepage-articles-heading {
+	font-size: 18px;
+	font-weight: 700;
+	color: var(--secondary-color);
+	padding-top: 30px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+}
+
 .homepage-article {
 	padding-bottom: 5px;
 }

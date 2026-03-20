@@ -1,17 +1,49 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 import "./styles/navBar.css";
 
 const NavBar = (props) => {
 	const { active } = props;
+	const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+	const toggleMenu = () => setIsMenuOpen((prev) => !prev);
+	const closeMenu = () => setIsMenuOpen(false);
 
 	return (
 		<React.Fragment>
 			<div className="nav-container">
 				<nav className="navbar">
 					<div className="nav-background">
-						<ul className="nav-list">
+						<button
+							className="nav-hamburger"
+							onClick={toggleMenu}
+							aria-label="Toggle navigation"
+						>
+							<span
+								className={
+									isMenuOpen ? "hamburger-line open" : "hamburger-line"
+								}
+							></span>
+							<span
+								className={
+									isMenuOpen ? "hamburger-line open" : "hamburger-line"
+								}
+							></span>
+							<span
+								className={
+									isMenuOpen ? "hamburger-line open" : "hamburger-line"
+								}
+							></span>
+						</button>
+
+						<ul
+							className={
+								isMenuOpen
+									? "nav-list nav-list-open"
+									: "nav-list"
+							}
+						>
 							<li
 								className={
 									active === "home"
@@ -19,7 +51,9 @@ const NavBar = (props) => {
 										: "nav-item"
 								}
 							>
-								<Link to="/">Home</Link>
+								<Link to="/" onClick={closeMenu}>
+									Home
+								</Link>
 							</li>
 							<li
 								className={
@@ -28,7 +62,9 @@ const NavBar = (props) => {
 										: "nav-item"
 								}
 							>
-								<Link to="/about">About</Link>
+								<Link to="/about" onClick={closeMenu}>
+									About
+								</Link>
 							</li>
 							<li
 								className={
@@ -37,7 +73,9 @@ const NavBar = (props) => {
 										: "nav-item"
 								}
 							>
-								<Link to="/experience">Experience</Link>
+								<Link to="/experience" onClick={closeMenu}>
+									Experience
+								</Link>
 							</li>
 							<li
 								className={
@@ -46,7 +84,9 @@ const NavBar = (props) => {
 										: "nav-item"
 								}
 							>
-								<Link to="/volunteering">Volunteering</Link>
+								<Link to="/volunteering" onClick={closeMenu}>
+									Volunteering
+								</Link>
 							</li>
 							<li
 								className={
@@ -55,7 +95,9 @@ const NavBar = (props) => {
 										: "nav-item"
 								}
 							>
-								<Link to="/contact">Contact</Link>
+								<Link to="/contact" onClick={closeMenu}>
+									Contact
+								</Link>
 							</li>
 						</ul>
 					</div>

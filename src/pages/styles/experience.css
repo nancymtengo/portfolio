@@ -38,11 +38,36 @@
 	padding-bottom: 40px;
 }
 
+.experience-entry-header {
+	display: flex;
+	align-items: flex-start;
+	gap: 14px;
+	margin-bottom: 10px;
+}
+
+.experience-entry-logo-link {
+	flex-shrink: 0;
+}
+
+.experience-entry-logo {
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	object-fit: cover;
+	outline: 4px solid white;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.experience-entry-meta {
+	display: flex;
+	flex-direction: column;
+}
+
 .experience-entry-title {
 	color: #000000;
 	font-size: 16px;
 	font-weight: 600;
-	margin-bottom: 4px;
+	margin-bottom: 2px;
 }
 
 .experience-entry-subtitle {

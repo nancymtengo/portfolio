@@ -56,17 +56,35 @@ const Experience = () => {
 										className="experience-entry"
 										key={index}
 									>
-										<div className="experience-entry-title">
-											{item.title}
-										</div>
-										<div className="experience-entry-subtitle">
-											{item.subtitle}
-											{item.duration && (
-												<span className="experience-entry-duration">
-													&nbsp;&mdash;&nbsp;
-													{item.duration}
-												</span>
+										<div className="experience-entry-header">
+											{item.logo && (
+												<a
+													href={item.logoLink || "#"}
+													target="_blank"
+													rel="noreferrer"
+													className="experience-entry-logo-link"
+												>
+													<img
+														src={item.logo}
+														alt={item.title}
+														className="experience-entry-logo"
+													/>
+												</a>
 											)}
+											<div className="experience-entry-meta">
+												<div className="experience-entry-title">
+													{item.title}
+												</div>
+												<div className="experience-entry-subtitle">
+													{item.subtitle}
+													{item.duration && (
+														<span className="experience-entry-duration">
+															&nbsp;&mdash;&nbsp;
+															{item.duration}
+														</span>
+													)}
+												</div>
+											</div>
 										</div>
 										<div className="experience-entry-description">
 											{item.description}
