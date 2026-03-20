@@ -1,5 +1,6 @@
 @import "../../../data/styles.css";
 
+/* ── Desktop pill nav ── */
 .nav-container {
 	margin: 0;
 	display: flex;
@@ -17,10 +18,8 @@
 }
 
 .nav-background {
-	width: 430px;
+	width: 540px;
 	height: 40px;
-	padding-left: 0%;
-	padding-right: 0%;
 	background: #fff;
 	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 	border-radius: 40px;
@@ -34,14 +33,15 @@
 	justify-content: space-between;
 	list-style: none;
 	align-items: center;
-	margin-left: -16px;
-	margin-right: 20px;
-	margin-top: 11px;
+	gap: 24px;
+	margin: 0;
+	padding: 0 24px;
 }
 
 .nav-item {
 	font-weight: bold;
 	font-size: 80%;
+	white-space: nowrap;
 }
 
 .nav-item.active a {
@@ -58,85 +58,92 @@
 	transition: color 0.3s ease-in-out;
 }
 
-/* Hamburger button — hidden on desktop */
+/* ── Mobile hamburger button — hidden on desktop ── */
 .nav-hamburger {
 	display: none;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	gap: 5px;
-	background: none;
-	border: none;
-	cursor: pointer;
-	padding: 8px 12px;
-	z-index: 1000;
 }
 
-.hamburger-line {
-	display: block;
-	width: 22px;
-	height: 2px;
-	background-color: var(--primary-color);
-	border-radius: 2px;
-	transition: transform 0.25s ease, opacity 0.25s ease;
+/* ── Mobile popover menu — hidden on desktop ── */
+.nav-mobile-menu {
+	display: none;
 }
 
-/* Mobile styles */
+/* ── Mobile overrides (≤ 600px) ── */
 @media (max-width: 600px) {
-	.navbar {
-		width: 90vw;
-		left: 0;
-		right: 0;
-		margin: 0 auto;
+	/* Hide the desktop pill */
+	.nav-container {
+		display: none;
 	}
 
-	.nav-background {
-		width: 100%;
-		height: 44px;
-		border-radius: 22px;
-		justify-content: flex-end;
-		padding-right: 4px;
-		position: relative;
-	}
-
-	/* Show hamburger on mobile */
+	/* Small square fixed button at top-right */
 	.nav-hamburger {
 		display: flex;
-	}
-
-	/* Hide nav list by default on mobile */
-	.nav-list {
-		display: none;
-		position: absolute;
-		top: 54px;
-		left: 0;
-		right: 0;
-		background: #fff;
-		border-radius: 16px;
-		box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.12);
 		flex-direction: column;
-		align-items: stretch;
-		margin: 0;
-		padding: 8px 0;
-		z-index: 998;
+		justify-content: center;
+		align-items: center;
+		gap: 5px;
+		position: fixed;
+		top: 3vh;
+		right: 5vw;
+		width: 42px;
+		height: 42px;
+		background: #fff;
+		border: none;
+		border-radius: 10px;
+		box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.12);
+		cursor: pointer;
+		z-index: 1000;
 	}
 
-	/* Show nav list when open */
-	.nav-list.nav-list-open {
-		display: flex;
-	}
-
-	.nav-item {
-		font-size: 90%;
-		padding: 10px 24px;
-		border-bottom: 1px solid #f4f4f5;
-	}
-
-	.nav-item:last-child {
-		border-bottom: none;
-	}
-
-	.nav-item a {
+	.hamburger-line {
 		display: block;
+		width: 20px;
+		height: 2px;
+		background-color: var(--primary-color);
+		border-radius: 2px;
+	}
+
+	/* Popover menu anchored below the button on the right */
+	.nav-mobile-menu {
+		display: block;
+		position: fixed;
+		top: calc(3vh + 52px);
+		right: 5vw;
+		background: #fff;
+		border-radius: 14px;
+		box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.14);
+		z-index: 999;
+		min-width: 170px;
+		overflow: hidden;
+	}
+
+	.nav-mobile-list {
+		list-style: none;
+		margin: 0;
+		padding: 6px 0;
+	}
+
+	.nav-mobile-item {
+		font-weight: 700;
+		font-size: 90%;
+	}
+
+	.nav-mobile-item a {
+		display: block;
+		padding: 11px 22px;
+		text-decoration: none;
+		color: var(--primary-color);
+	}
+
+	.nav-mobile-item.active a {
+		color: var(--link-color);
+	}
+
+	.nav-mobile-item a:hover {
+		color: var(--link-color);
+	}
+
+	.nav-mobile-item:not(:last-child) {
+		border-bottom: 1px solid #f4f4f5;
 	}
 }

@@ -7,12 +7,13 @@
 .work {
 	display: flex;
 	align-items: flex-start;
-	padding-bottom: 30px;
+	padding-bottom: 20px;
 }
 
 .work-logo-link {
 	flex-shrink: 0;
 	margin-right: 18px;
+	margin-top: 2px;
 }
 
 .work-image {
@@ -23,7 +24,7 @@
 	box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.25);
 }
 
-.work-details {
+.work-info {
 	flex: 1;
 	display: flex;
 	flex-direction: column;
@@ -33,6 +34,18 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
+	cursor: pointer;
+	user-select: none;
+}
+
+.work-header:hover .work-title {
+	color: var(--link-color);
+	transition: color 0.2s ease-in-out;
+}
+
+.work-title-group {
+	display: flex;
+	flex-direction: column;
 }
 
 .work-title {
@@ -41,22 +54,40 @@
 	color: var(--secondary-color);
 }
 
-.work-duration {
-	font-size: 12px;
-	color: var(--tertiary-color);
-	white-space: nowrap;
-	padding-left: 10px;
-}
-
 .work-subtitle {
 	font-size: 12px;
 	color: var(--secondary-color);
 	margin-top: 3px;
 }
 
-.work-description {
+.work-right {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	flex-shrink: 0;
+	padding-left: 12px;
+}
+
+.work-duration {
+	font-size: 12px;
+	color: var(--tertiary-color);
+	white-space: nowrap;
+}
+
+.work-expand-icon {
+	font-size: 11px;
+	color: var(--tertiary-color);
+}
+
+.work-bullets {
+	margin-top: 12px;
+	padding-left: 18px;
+	list-style: disc;
+}
+
+.work-bullets li {
 	font-size: 12px;
 	color: var(--secondary-color);
-	margin-top: 8px;
-	line-height: 1.7;
+	line-height: 1.8;
+	padding-bottom: 4px;
 }

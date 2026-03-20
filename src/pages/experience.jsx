@@ -1,5 +1,7 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
+import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
@@ -14,6 +16,20 @@ const Experience = () => {
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
+
+	const [expanded, setExpanded] = useState(new Set());
+
+	const toggleExpand = (index) => {
+		setExpanded((prev) => {
+			const next = new Set(prev);
+			if (next.has(index)) {
+				next.delete(index);
+			} else {
+				next.add(index);
+			}
+			return next;
+		});
+	};
 
 	const currentSEO = SEO.find((item) => item.page === "experience");
 
@@ -56,13 +72,19 @@ const Experience = () => {
 										className="experience-entry"
 										key={index}
 									>
-										<div className="experience-entry-header">
+										<div
+											className="experience-entry-header"
+											onClick={() => toggleExpand(index)}
+										>
 											{item.logo && (
 												<a
 													href={item.logoLink || "#"}
 													target="_blank"
 													rel="noreferrer"
 													className="experience-entry-logo-link"
+													onClick={(e) =>
+														e.stopPropagation()
+													}
 												>
 													<img
 														src={item.logo}
@@ -85,10 +107,30 @@ const Experience = () => {
 													)}
 												</div>
 											</div>
+											<FontAwesomeIcon
+												icon={
+													expanded.has(index)
+														? faChevronUp
+														: faChevronDown
+												}
+												className="experience-entry-chevron"
+											/>
 										</div>
 										<div className="experience-entry-description">
 											{item.description}
 										</div>
+										{expanded.has(index) &&
+											item.details && (
+												<ul className="experience-entry-bullets">
+													{item.details.map(
+														(bullet, i) => (
+															<li key={i}>
+																{bullet}
+															</li>
+														)
+													)}
+												</ul>
+											)}
 									</div>
 								))}
 							</div>

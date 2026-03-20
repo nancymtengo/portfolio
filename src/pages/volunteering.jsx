@@ -4,7 +4,6 @@ import { Helmet } from "react-helmet";
 import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
-import Project from "../components/projects/project";
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
@@ -50,13 +49,24 @@ const Volunteering = () => {
 						<div className="volunteering-list">
 							{INFO.volunteering.map((item, index) => (
 								<div className="volunteering-item" key={index}>
-									<Project
-										logo={item.logo}
-										title={item.title}
-										description={item.description}
-										linkText={item.linkText}
-										link={item.link}
-									/>
+									<div className="vol-card">
+										<div className="vol-card-container">
+											{item.logo && (
+												<div className="vol-card-logo">
+													<img
+														src={item.logo}
+														alt={item.title}
+													/>
+												</div>
+											)}
+											<div className="vol-card-title">
+												{item.title}
+											</div>
+											<div className="vol-card-description">
+												{item.description}
+											</div>
+										</div>
+									</div>
 								</div>
 							))}
 						</div>

@@ -43,6 +43,21 @@
 	align-items: flex-start;
 	gap: 14px;
 	margin-bottom: 10px;
+	cursor: pointer;
+	user-select: none;
+}
+
+.experience-entry-header:hover .experience-entry-title {
+	color: var(--link-color);
+	transition: color 0.2s ease-in-out;
+}
+
+.experience-entry-chevron {
+	font-size: 11px;
+	color: var(--tertiary-color);
+	margin-left: auto;
+	margin-top: 4px;
+	flex-shrink: 0;
 }
 
 .experience-entry-logo-link {
@@ -86,6 +101,19 @@
 	font-size: 12px;
 	color: var(--secondary-color);
 	line-height: 25px;
+}
+
+.experience-entry-bullets {
+	margin-top: 12px;
+	padding-left: 18px;
+	list-style: disc;
+}
+
+.experience-entry-bullets li {
+	font-size: 12px;
+	color: var(--secondary-color);
+	line-height: 1.8;
+	padding-bottom: 4px;
 }
 
 @media (max-width: 1024px) {
