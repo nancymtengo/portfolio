@@ -1,84 +1,79 @@
 const INFO = {
 	main: {
-		title: "Reactfolio by truethari",
-		name: "Tharindu N.",
-		email: "mail@tharindu.dev",
+		title: "Nancy Mtengo",
+		name: "Nancy Mtengo",
+		email: "nancydama4@gmail.com",
 		logo: "../logo.png",
 	},
 
 	socials: {
-		twitter: "https://twitter.com/",
-		github: "https://github.com/",
-		linkedin: "https://linkedin.com/",
-		instagram: "https://instagram.com/",
-		stackoverflow: "https://stackoverflow.com/",
-		facebook: "https://facebook.com/",
+		linkedin: "https://www.linkedin.com/in/nancy-mtengo-2a7809345",
 	},
 
-	homepage: {
-		title: "Full-stack web and mobile app developer, and amateur astronaut.",
-		description:
-			"I am a backend developer with expertise in Node.js. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies. I enjoy solving complex problems and learning new skills. I am passionate about creating high-quality code that follows best practices and industry standards. I am always looking for new challenges and opportunities to grow as a developer.",
-	},
+homepage: {
+        title: "Bachelor of Laws student and legal advocate.",
+        description:
+            "I am a passionate, engaging and inspiring team player, keen on delivering exceptional results and willing to learn. I am seeking to increase my learning opportunities by working with a reputable, innovative and a growing institution that will expose me to the relevant areas I need in advancing my career.",
+    },
 
-	about: {
-		title: "I’m Tharindu N. I live in Sri Lanka, where I design the future.",
-		description:
-			"I've worked on a variety of projects over the years and I'm proud of the progress I've made. Many of these projects are open-source and available for others to explore and contribute to. If you're interested in any of the projects I've worked on, please feel free to check out the code and suggest any improvements or enhancements you might have in mind. Collaborating with others is a great way to learn and grow, and I'm always open to new ideas and feedback.",
-	},
+    about: {
+        title: "I’m Nancy Dama Mtengo. I live in Nairobi, Kenya, where I advocate for justice.",
+        description:
+            "I am currently undertaking a Bachelor of Laws at Kenyatta University. I have gained practical experience as a Legal Intern at the Office of the Registrar of Political Parties and as a Judicial Intern at the Mombasa Law Courts. My background includes drafting judicial opinions, civil litigation, criminal matters, and family disputes. I am also an active member of the Kenya Model United Nation (KMUN) and the Legal Aid club, where I offer free legal advice to the public.",
+    },
 
-	articles: {
-		title: "I'm passionate about pushing the boundaries of what's possible and inspiring the next generation of innovators.",
-		description:
-			"Chronological collection of my long-form thoughts on programming, leadership, product design, and more.",
-	},
+    articles: {
+        title: "I'm passionate about legal research, human rights, and advocacy.",
+        description:
+            "A chronological collection of my thoughts on civil litigation, political party compliance, constitutional law, and legal reform.",
+    },
 
-	projects: [
-		{
-			title: "Project 1",
-			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
-			linkText: "View Project",
-			link: "https://github.com",
-		},
+    projects: [
+        {
+            title: "Legal Intern - ORPP",
+            description:
+                "Provided legal advice on matters relating to political parties' registration, compliance, and regulation under the Political Parties Act.",
+            logo: "https://example.com/icons/legal-scale.png",
+            linkText: "View Experience",
+            link: "#",
+        },
 
-		{
-			title: "Project 2",
-			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
-			linkText: "View Project",
-			link: "https://github.com",
-		},
+        {
+            title: "Judicial Intern - Mombasa Law Courts",
+            description:
+                "Assisted in the resolution of complex legal issues through thorough analysis of relevant statutes and case law, working on Civil Litigation, Criminal matters and family disputes.",
+            logo: "https://example.com/icons/gavel.png",
+            linkText: "View Experience",
+            link: "#",
+        },
 
-		{
-			title: "Project 3",
-			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/html/html.png",
-			linkText: "View Project",
-			link: "https://github.com",
-		},
+        {
+            title: "Computer Studies Teacher",
+            description:
+                "Developed meaningful relationships with students at Smartbrains Academy, improving comprehension of complex concepts through the use of visual aids and real world examples.",
+            logo: "https://example.com/icons/education.png",
+            linkText: "View Experience",
+            link: "#",
+        },
 
-		{
-			title: "Project 4",
-			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
-			linkText: "View Project",
-			link: "https://github.com",
-		},
+        {
+            title: "Kenya Model United Nation (KMUN)",
+            description:
+                "Active member of the KMUN Kusol Chapter and participated in the 21st KMUN intervarsity Debate and warm up challenge.",
+            logo: "https://example.com/icons/debate.png",
+            linkText: "View Experience",
+            link: "#",
+        },
 
-		{
-			title: "Project 5",
-			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
-			linkText: "View Project",
-			link: "https://github.com",
-		},
-	],
+        {
+            title: "Legal Aid Clinic Volunteer",
+            description:
+                "Active member of the Legal Aid club in Kenyatta University, offering free legal advice to the public during the Legal Aid Clinic Week.",
+            logo: "https://example.com/icons/community.png",
+            linkText: "View Experience",
+            link: "#",
+        },
+    ],
 };
 
 export default INFO;
