@@ -2,36 +2,36 @@ const SEO = [
 	{
 		page: "home",
 		description:
-			"I am a backend developer with expertise in Node.js. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies.",
-		keywords: ["Tharindu", "Tharindu N", "Tharindu Nayanajith"],
+			"I am a Bachelor of Laws student and legal advocate based in Nairobi, Kenya, passionate about civil litigation, human rights, and legal reform.",
+		keywords: ["Nancy Mtengo", "Nancy Dama Mtengo", "law student", "legal advocate", "Kenya"],
 	},
 
 	{
 		page: "about",
 		description:
-			"I am a backend developer with expertise in Node.js. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies.",
-		keywords: ["Tharindu", "Tharindu N", "Tharindu Nayanajith"],
+			"Learn more about Nancy Mtengo — a Bachelor of Laws student at Kenyatta University with experience in legal internships and judicial internships.",
+		keywords: ["Nancy Mtengo", "about", "Kenyatta University", "legal intern", "Kenya"],
 	},
 
 	{
-		page: "articles",
+		page: "volunteering",
 		description:
-			"Chronological collection of my long-form thoughts on programming, leadership, product design, and more.",
-		keywords: ["Tharindu", "Tharindu N", "Tharindu Nayanajith"],
+			"Nancy Mtengo's volunteer work and community involvement, including the Kenya Model United Nations and the Legal Aid Clinic.",
+		keywords: ["Nancy Mtengo", "volunteering", "KMUN", "Legal Aid", "community service"],
 	},
 
 	{
-		page: "projects",
+		page: "experience",
 		description:
-			"I've worked on a variety of projects over the years and I'm proud of the progress I've made. Many of these projects are open-source and available for others to explore and contribute to.",
-		keywords: ["Tharindu", "Tharindu N", "Tharindu Nayanajith"],
+			"Nancy Mtengo's professional experience, including internships at the Office of the Registrar of Political Parties and Mombasa Law Courts.",
+		keywords: ["Nancy Mtengo", "experience", "legal intern", "judicial intern", "ORPP"],
 	},
 
 	{
 		page: "contact",
 		description:
-			"If you're interested in collaborating on a project, feel free to reach out to me. I'm always open to new ideas and opportunities.",
-		keywords: ["Tharindu", "Tharindu N", "Tharindu Nayanajith"],
+			"Get in touch with Nancy Mtengo — open to legal opportunities, collaborations, and professional enquiries.",
+		keywords: ["Nancy Mtengo", "contact", "email", "LinkedIn"],
 	},
 ];
 
